@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="../src/output.css" rel="stylesheet" />
+
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      input {
+        outline: none;
+      }
+    </style>
+    <title id="titel">Convert °C to °F</title>
+  </head>
+  <body
+    class="bg-slate-400 w-full h-screen flex justify-center items-stretch flex-col"
+  >
+    <h1 id="h1" class="text-center mb-[10vh] text-white font-bold text-[2em]">
+      Convert °C to °F
+    </h1>
+    <input
+      id="input"
+      placeholder="°C"
+      class="w-[20%] mb-[5vh] h-[5vh] pl-5 text-xl ml-[40%]"
+      type="text"
+    />
+    <div
+      id="alert"
+      style="display: none"
+      class="text-center mb-[10vh] text-red-600 font-extrabold text-[1.5em]"
+    >
+      Write correct value!
+    </div>
+
+    <div
+      class="mt-5 h-[10vh] w-[50%] ml-[25%] flex justify-between items-center"
+    >
+      <button
+        id="convert"
+        class="bg-slate-700 px-10 text-2xl py-5 rounded-xl w-[25%] hover:scale-110 duration-300 text-white"
+      >
+        CONVERT</button
+      ><button
+        id="reset"
+        class="bg-slate-700 px-10 text-2xl py-5 rounded-xl w-[25%] hover:scale-110 duration-300 text-white"
+      >
+        RESET</button
+      ><button
+        id="change"
+        class="bg-slate-700 px-10 text-2xl py-5 rounded-xl w-[25%] hover:scale-110 duration-300 text-white"
+      >
+        CHANGE
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
