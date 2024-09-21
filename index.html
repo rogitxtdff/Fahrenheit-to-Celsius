@@ -19,44 +19,44 @@
   <body
     class="bg-slate-400 w-full h-screen flex justify-center items-stretch flex-col"
   >
-    <h1 id="h1" class="text-center mb-[10vh] text-white font-bold text-[2em]">
+    <h1 id="h1" style="text-shadow: 0px 3px 5px rgb(111, 111, 111);" class="2xl:text-[2.5em] text-center mb-[10vh] text-white font-extrabold text-[2em] lg:text-[3em] ">
       Convert °C to °F
     </h1>
     <input
       id="input"
       placeholder="°C"
-      class="w-[20%] mb-[5vh] h-[5vh] pl-5 text-xl ml-[40%]"
+      class="w-[70%] lg:mb-10 lg:text-xl sm:w-[50%] sm:ml-[25%] 2xl:w-[30%] 2xl:ml-[35%]  mb-[2.5vh] h-[5vh] pl-5 text-lg shadow-2xl shadow-gray-500 ml-[15%] rounded-md"
       type="text"
     />
     <div
       id="alert"
-      style="display: none"
-      class="text-center mb-[10vh] text-red-600 font-extrabold text-[1.5em]"
+      style="opacity: 0%;text-shadow: 0px 1px 2px rgb(111, 111, 111);"
+      class="lg:-mb-5 text-center mb-[5vh] text-red-600  font-extrabold text-[1.5em]"
     >
       Write correct value!
     </div>
 
     <div
-      class="mt-5 h-[10vh] w-[50%] ml-[25%] flex justify-between items-center"
+      class=" h-[180px] sm:h-[200px] 2xl:w-[50%] 2xl:ml-[25%] ml-[25%] lg:ml-[20%]  w-[50%] ml-[20%] flex flex-col justify-between items-center lg:flex-row lg:w-[60%] lg:h-[100px%]"
     >
       <button
         id="convert"
-        class="bg-slate-700 px-10 text-2xl py-5 rounded-xl w-[25%] hover:scale-110 duration-300 text-white"
+        class="bg-slate-700 px-10 text-2xl h-[25%] sm:w-[70%] lg:w-[30%]  2xl:w-[25%]  rounded-xl w-[100%] hover:scale-110 duration-300 text-white"
       >
         CONVERT</button
       ><button
         id="reset"
-        class="bg-slate-700 px-10 text-2xl py-5 rounded-xl w-[25%] hover:scale-110 duration-300 text-white"
+        class="bg-slate-700 px-10 text-2xl h-[25%] sm:w-[70%] lg:w-[30%]  2xl:w-[25%]  rounded-xl w-[100%] hover:scale-110 duration-300 text-white"
       >
         RESET</button
       ><button
         id="change"
-        class="bg-slate-700 px-10 text-2xl py-5 rounded-xl w-[25%] hover:scale-110 duration-300 text-white"
+        class="bg-slate-700 px-10 text-2xl h-[25%] sm:w-[70%] lg:w-[30%]  2xl:w-[25%]  rounded-xl w-[100%] hover:scale-110 duration-300 text-white"
       >
         CHANGE
       </button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
